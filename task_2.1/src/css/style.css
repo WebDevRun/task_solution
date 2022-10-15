@@ -145,16 +145,17 @@ body {
   align-content: center;
 }
 
-.price__total {
-  font-size: 30px;
-  color: #000000;
-}
-
 .price {
+  width: 129px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 5px;
+}
+
+.price__total {
+  font-size: 36px;
+  color: #000000;
 }
 
 .price__on_pier {
@@ -177,8 +178,39 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 476px) {
+@media (min-width: 425px) {
   .card__img img {
     height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    margin-left: 20px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card__img,
+  .card__img-shadow {
+    width: 473px;
+  }
+
+  .card__img img {
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .card__img-shadow img {
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .footer {
+    justify-content: left;
+  }
+
+  .price {
+    margin-right: 13px;
   }
 }
